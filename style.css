@@ -10,14 +10,38 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {font-family: 'Inter', sans-serif;}
-h1, h2, h3, h4 {font-family: 'Merriweather', serif;}
-button {cursor: pointer;}
-image {max-width: 100%;}
+body {
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+}
+p {
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.80);;
+}
+button {
+  cursor: pointer;
+}
+image { max-width: 100%; }
 .container {
   max-width: 1140px;
   margin: auto;
   padding: 0 1rem;
+}
+.btn-primary {
+  background: var(--clr-primary);
+  padding: .5rem 1rem;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+.btn-primary:hover {
+  opacity: .75;
+}
+.heading-lg {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 /* ## hero-sect */
@@ -39,10 +63,7 @@ image {max-width: 100%;}
 .hero-sect .content p {
   font-family: 'Merriwather', serif;
   font-size: 2rem;
-}
-.hero-sect .content h1 {
-  font-size: 3rem;
-  margin: 1rem;
+  margin-bottom: .5rem;
 }
 
 /* ## discount-sect */
@@ -70,4 +91,25 @@ image {max-width: 100%;}
 }
 .discount-sect img {
   max-width: 600px;
+}
+
+/* ## join-now-sect */
+.join-now-sect {
+  margin: 2rem 1rem;
+  color: white;
+}
+.join-now-sect .container {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 3rem 1rem;
+  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./images/party.png') no-repeat center center/cover;
+}
+.join-now-sect .content {
+  max-width: 500px;
+}
+.join-now-sect .content p {
+  margin-bottom: 1rem;
 }
