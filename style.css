@@ -16,9 +16,13 @@ h1, h2, h3, h4 {
 }
 button { cursor: pointer; }
 image { max-width: 100%; }
+a:hover {opacity: .75;}
 
 /* ## shared styles */
-.p-dark { color: rgba(7, 2, 17, 0.60); }
+.p-dark { 
+  color: rgba(7, 2, 17, 0.60); 
+  line-height: 1.5;
+}
 .p-light {
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.80);;
@@ -143,7 +147,6 @@ image { max-width: 100%; }
 .newsletter-sect {
   margin: 1rem;
 }
-
 .newsletter-sect .container {
   background: rgba(255, 0, 0, 0.05);
   border-radius: 1rem;
@@ -157,7 +160,6 @@ image { max-width: 100%; }
 .newsletter-sect .content > * {
   margin-bottom: 1rem;
 }
-
 .newsletter-sect form {
   border: 1px solid #ddd;
   display: flex;
@@ -177,3 +179,54 @@ image { max-width: 100%; }
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
 }
+
+footer {
+  background: #070211;
+  color: white;
+  margin-top: 3rem;
+  padding: 3rem 0;
+}
+footer .contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .contact-info .contact-list p {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .75rem;
+}
+footer .contact-info .contact-list img {
+  width: 20px;
+}
+footer .contact-info  .contact-list a {
+  color: white;
+  text-decoration: none;
+}
+footer hr {
+  margin: 1rem 0;
+}
+footer .social-links {
+  text-align: center;
+}
+footer .social-links a {
+  display: inline-block;
+  width: 40px;
+  margin-right: 1rem;
+}
+footer .social-links img {width: 100%;}
+footer .unsub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .unsub button {
+  color: var(--clr-primary);
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+footer .unsub button:hover {opacity: .75;}
