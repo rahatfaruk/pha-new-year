@@ -14,11 +14,11 @@ body { font-family: 'Inter', sans-serif; }
 h1, h2, h3, h4 {
   font-family: 'Merriweather', serif;
 }
-p { color: rgba(7, 2, 17, 0.60); }
 button { cursor: pointer; }
 image { max-width: 100%; }
 
 /* ## shared styles */
+.p-dark { color: rgba(7, 2, 17, 0.60); }
 .p-light {
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.80);;
@@ -137,4 +137,43 @@ image { max-width: 100%; }
 }
 .portfolio-sect .gallery img {
   width: 100%;
+}
+
+/* ## newsletter-sect */
+.newsletter-sect {
+  margin: 1rem;
+}
+
+.newsletter-sect .container {
+  background: rgba(255, 0, 0, 0.05);
+  border-radius: 1rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.newsletter-sect .content {
+  max-width: 500px;
+  margin: auto;
+}
+.newsletter-sect .content > * {
+  margin-bottom: 1rem;
+}
+
+.newsletter-sect form {
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  max-width: 500px;
+  margin: 2rem auto 0;
+}
+.newsletter-sect form input {
+  padding: 1rem;
+  border: none;
+  flex: 1;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+.newsletter-sect form button {
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
 }
