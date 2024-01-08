@@ -13,6 +13,7 @@
 body {font-family: 'Inter', sans-serif;}
 h1, h2, h3, h4 {font-family: 'Merriweather', serif;}
 button {cursor: pointer;}
+image {max-width: 100%;}
 .container {
   max-width: 1140px;
   margin: auto;
@@ -44,3 +45,29 @@ button {cursor: pointer;}
   margin: 1rem;
 }
 
+/* ## discount-sect */
+.discount-sect {
+  margin: 1rem auto;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.discount-sect .content {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+.discount-sect .content h2 {
+  font-size: 3rem;
+  color: var(--clr-primary);
+  margin-bottom: 1rem;
+}
+.discount-sect .content p:nth-of-type(1) {
+  color: var(--clr-primary);
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+.discount-sect .content p:nth-of-type(2) {
+  font-size: 2rem;
+}
+.discount-sect img {
+  max-width: 600px;
+}
