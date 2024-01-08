@@ -38,6 +38,7 @@ a:hover {opacity: .75;}
   color: white;
   border: none;
   font-size: 1rem;
+  border-radius: .5rem;
 }
 .btn-primary:hover {
   opacity: .75;
@@ -121,6 +122,25 @@ a:hover {opacity: .75;}
   margin-bottom: 1rem;
 }
 
+/* ## vanue-sect */
+.vanue-sect {
+  margin: 2rem 1rem;
+}
+.vanue-sect .container {
+  background-image: linear-gradient(to bottom, rgba(255,0,0,.2), rgba(255, 0, 0, 0.01));
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.vanue-sect .container > * {
+  margin-bottom: .5rem;
+}
+.vanue-sect .container strong {color: var(--clr-primary);}
+.vanue-sect .container button { margin-top: 1rem; }
+
+
 /* ## offer-sect */
 .offer-sect {
   margin-top: 3rem;
@@ -147,6 +167,46 @@ a:hover {opacity: .75;}
 .offer-sect .content-2 img {
   margin-top: 1rem;
   width: 100px;
+}
+
+/* ## holiday-sale-sect */
+.holiday-sale-sect {
+  margin: 4rem 0;
+}
+.holiday-sale-sect .content {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+.holiday-sale-sect .content h2 {
+  margin-top: .5rem;
+}
+.holiday-sale-sect .content h2 span {color: var(--clr-primary);}
+.holiday-sale-sect .gift-showcase {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+  background-image: url('./images/red-square.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% 140px;
+}
+.holiday-sale-sect .gift-showcase .gift-img-wrapper {
+  flex: 0 1 50%;
+}
+.holiday-sale-sect .gift-showcase .girl-img-wrapper {
+  position: relative;
+  flex: 0 1 30%;
+  z-index: -1;
+}
+.holiday-sale-sect .gift-showcase .girl-img-wrapper img:first-child {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 150px;
+  transform: translate(-50%, -50%);
 }
 
 /* ## portfolio-sect */
